@@ -6,7 +6,7 @@ spring:
   application:
     name: user-service
     
-#server:
+#server: 
 #  port: 8101
 
 eureka:
