@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: turbin
+    
+server:
+  port: 5001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+      
+turbine:
+  app-config: order-service, zuul    #监控的服务
+  cluster-name-expression: new String("default")  #当前监控的聚合的数据(集群),不能直接写名字 default 特殊格式
+
